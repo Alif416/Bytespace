@@ -1,6 +1,10 @@
+interface HeroPersonProps {
+  className?: string
+}
+
 // Placeholder illustration standing in for the photo cropped from Figma.
 // Swap the <svg> below for the real exported PNG/JPG once available.
-export default function HeroPerson({ className = '' }) {
+export default function HeroPerson({ className = '' }: HeroPersonProps) {
   return (
     <svg viewBox="0 0 360 420" className={className} aria-hidden="true">
       {/* torso / jacket */}

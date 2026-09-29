@@ -1,4 +1,14 @@
-export default function ProgressCard({ label = 'Learning Progress', value = 55, className = '' }) {
+interface ProgressCardProps {
+  label?: string
+  value?: number
+  className?: string
+}
+
+export default function ProgressCard({
+  label = 'Learning Progress',
+  value = 55,
+  className = '',
+}: ProgressCardProps) {
   return (
     <div className={`rounded-2xl bg-white px-5 py-4 shadow-lg ${className}`}>
       <p className="text-xs font-medium text-slate-500">{label}</p>
