@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", system-ui, "Segoe UI", Roboto, sans-serif;
+
+  --color-brand-blue: #163ad9;
+  --color-brand-lime: #dcfa57;
+  --color-brand-lime-dark: #c6e03f;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+}
