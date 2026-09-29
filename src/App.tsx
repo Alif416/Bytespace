@@ -1,5 +1,6 @@
 import CourseCategories from './components/CourseCategories'
 import Hero from './components/Hero'
+import LearningPaths from './components/LearningPaths'
 import TrustedLogos from './components/TrustedLogos'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Hero />
       <TrustedLogos />
       <CourseCategories />
+      <LearningPaths />
     </>
   )
 }
