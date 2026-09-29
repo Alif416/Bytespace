@@ -1,4 +1,6 @@
 import CourseCategories from './components/CourseCategories'
+import CourseCreationShowcase from './components/CourseCreationShowcase'
+import CreatorCta from './components/CreatorCta'
 import Hero from './components/Hero'
 import LearningPaths from './components/LearningPaths'
 import ProfessionalGrowth from './components/ProfessionalGrowth'
@@ -12,6 +14,8 @@ function App() {
       <CourseCategories />
       <LearningPaths />
       <ProfessionalGrowth />
+      <CourseCreationShowcase />
+      <CreatorCta />
     </>
   )
 }
