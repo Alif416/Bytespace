@@ -1,0 +1,61 @@
+import { useState } from 'react'
+import CategoryPill from './CategoryPill'
+
+const CATEGORIES = [
+  'Featured',
+  'Music',
+  'Drawing & Painting',
+  'Marketing',
+  'Animation',
+  'Social Media',
+  'UI/UX Design',
+  'Creative Marketing',
+  'Digital Illustration',
+  'Film & Video',
+  'Crafts',
+  'Freelance & Entrepreneurship',
+  'Graphic Design',
+  'Photography',
+  'Productivity',
+  'Web Development',
+  'Data Science',
+  'Cooking',
+]
+
+export default function CourseCategories() {
+  const [active, setActive] = useState('Featured')
+
+  return (
+    <section className="bg-white py-16 sm:py-20">
+      <div className="mx-auto max-w-4xl px-6 text-center">
+        <h2 className="text-3xl font-extrabold leading-tight text-slate-950 sm:text-4xl">
+          Discover Your Passion,
+          <br />
+          Build Your Skills
+        </h2>
+        <p className="mx-auto mt-4 max-w-2xl text-sm text-[#83868D] sm:text-base">
+          At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a
+          variety of courses across different fields, from technology to the arts, and make a
+          difference in your career and life.
+        </p>
+
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          {CATEGORIES.map((label) => (
+            <CategoryPill
+              key={label}
+              label={label}
+              active={active === label}
+              onClick={() => setActive(label)}
+            />
+          ))}
+          <button
+            type="button"
+            className="flex items-center gap-1 px-2 py-2.5 text-sm font-medium text-brand-blue transition hover:underline"
+          >
+            + More
+          </button>
+        </div>
+      </div>
+    </section>
+  )
+}
