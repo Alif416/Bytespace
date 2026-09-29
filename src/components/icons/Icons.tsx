@@ -1,4 +1,8 @@
-export function SearchIcon({ className = 'w-5 h-5' }) {
+interface IconProps {
+  className?: string
+}
+
+export function SearchIcon({ className = 'w-5 h-5' }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -16,7 +20,7 @@ export function SearchIcon({ className = 'w-5 h-5' }) {
   )
 }
 
-export function BagIcon({ className = 'w-5 h-5' }) {
+export function BagIcon({ className = 'w-5 h-5' }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -34,7 +38,7 @@ export function BagIcon({ className = 'w-5 h-5' }) {
   )
 }
 
-export function StarIcon({ className = 'w-4 h-4' }) {
+export function StarIcon({ className = 'w-4 h-4' }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
       <path d="M12 2.5l2.9 6.14 6.6.72-4.9 4.6 1.28 6.54L12 17.77l-5.88 3.23L7.4 14.46l-4.9-4.6 6.6-.72L12 2.5Z" />
@@ -42,7 +46,7 @@ export function StarIcon({ className = 'w-4 h-4' }) {
   )
 }
 
-export function LogoMark({ className = 'w-9 h-9' }) {
+export function LogoMark({ className = 'w-9 h-9' }: IconProps) {
   return (
     <div
       className={`${className} rounded-xl bg-brand-lime flex items-center justify-center shrink-0`}

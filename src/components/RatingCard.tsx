@@ -1,8 +1,12 @@
 import { StarIcon } from './icons/Icons'
 
+interface RatingCardProps {
+  className?: string
+}
+
 const AVATAR_SEEDS = [12, 33, 47, 5, 21]
 
-export default function RatingCard({ className = '' }) {
+export default function RatingCard({ className = '' }: RatingCardProps) {
   return (
     <div className={`rounded-2xl bg-white px-5 py-4 shadow-lg ${className}`}>
       <p className="whitespace-nowrap text-sm font-semibold text-slate-900">Happy Students</p>

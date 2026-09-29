@@ -1,4 +1,9 @@
-export default function Squiggle({ color = '#DCFA57', className = '' }) {
+interface SquiggleProps {
+  color?: string
+  className?: string
+}
+
+export default function Squiggle({ color = '#DCFA57', className = '' }: SquiggleProps) {
   return (
     <svg
       viewBox="0 0 100 280"
