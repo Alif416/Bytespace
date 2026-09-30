@@ -1,33 +1,37 @@
 import type { ComponentType } from 'react'
-import {
-  BoltMark,
-  CloverMark,
-  SparkMark,
-  SpiralMark,
-  WaveMark,
-} from './icons/LogoMarks'
+import bolt from '../assets/logos/bolt.png'
+import clover from '../assets/logos/clover.png'
+import spiral from '../assets/logos/spiral.png'
+import wave from '../assets/logos/wave.png'
+import { SparkMark } from './icons/LogoMarks'
 
 interface LogoEntry {
   label: string
   Icon: ComponentType<{ className?: string }>
 }
 
+const imageIcon =
+  (src: string) =>
+  ({ className }: { className?: string }) => (
+    <img src={src} alt="" className={className} />
+  )
+
 const LOGOS: LogoEntry[] = [
-  { label: 'Logoipsum', Icon: WaveMark },
+  { label: 'Logoipsum', Icon: imageIcon(wave) },
   { label: 'Logoipsum', Icon: SparkMark },
-  { label: 'Logoipsum', Icon: BoltMark },
-  { label: 'Logoipsum', Icon: CloverMark },
-  { label: 'Logoipsum', Icon: SpiralMark },
+  { label: 'Logoipsum', Icon: imageIcon(bolt) },
+  { label: 'Logoipsum', Icon: imageIcon(clover) },
+  { label: 'Logoipsum', Icon: imageIcon(spiral) },
 ]
 
 export default function TrustedLogos() {
   return (
-    <section className="bg-white py-10">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-10 gap-y-6 px-6 sm:justify-between lg:px-10">
+    <section className="bg-[#f4f4f4] py-14 sm:py-16">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-10 gap-y-6 px-6 sm:justify-between">
         {LOGOS.map(({ label, Icon }, i) => (
           <div key={i} className="flex items-center gap-2 text-[#83868D]">
-            <Icon className="h-5 w-5" />
-            <span className="text-lg font-medium">{label}</span>
+            <Icon className="h-9 w-9" />
+            <span className="text-xl font-bold tracking-tight">{label}</span>
           </div>
         ))}
       </div>

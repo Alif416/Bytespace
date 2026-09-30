@@ -11,6 +11,11 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-brand-blue">
       <HeroDecor />
+      <img
+        src={limeArch}
+        alt=""
+        className="pointer-events-none absolute bottom-0 left-1/2 z-[1] h-auto w-[720px] max-w-none -translate-x-1/2 sm:w-[900px] lg:w-[1150px]"
+      />
 
       <div className="relative z-10">
         <Navbar />
@@ -30,27 +35,19 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto mt-12 flex max-w-4xl justify-center overflow-hidden px-6 lg:mt-16 lg:overflow-visible">
-          <div className="relative flex h-[360px] w-[300px] items-end justify-center sm:h-[480px] sm:w-[420px] lg:h-[560px] lg:w-[500px]">
-            <img
-              src={limeArch}
-              alt=""
-              className="absolute bottom-6 h-[80%] w-[85%] object-cover"
-              style={{ borderRadius: '50%' }}
-            />
+        <div className="relative mx-auto mt-16 flex max-w-4xl justify-center overflow-hidden px-6 lg:mt-24 lg:overflow-visible">
+          <div className="relative flex h-[360px] w-[300px] items-end justify-center sm:h-[480px] sm:w-[420px] lg:h-[560px] lg:w-[500px] scale-125">
             <img
               src={heroPersonPhoto}
               alt="Student wearing headphones holding a laptop"
               className="relative z-10 h-[92%] w-auto max-w-none object-contain"
             />
 
-            <CourseInfoCard className="absolute left-0 top-10 z-20 w-36 sm:top-16 sm:w-44 lg:-left-8" />
-            <ProgressCard className="absolute right-0 top-24 z-20 w-32 sm:top-32 sm:w-40 lg:-right-10" />
-            <RatingCard className="absolute bottom-0 left-0 z-20 w-48 sm:w-56 lg:-left-14" />
+            <CourseInfoCard className="absolute left-0 top-40 z-20 w-40 whitespace-nowrap !px-4 !py-3 sm:top-44 sm:w-auto lg:-left-16" />
+            <ProgressCard className="absolute right-0 top-28 z-20 w-32 !px-4 !py-3 sm:top-32 sm:w-36 lg:-right-4" />
+            <RatingCard className="absolute bottom-24 left-0 z-20 w-48 sm:w-56 lg:-left-14" />
           </div>
         </div>
-
-        <div className="h-20 sm:h-24" />
       </div>
     </section>
   )
