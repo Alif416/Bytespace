@@ -91,12 +91,9 @@ src/
 - **One real course.** Only one course detail page exists, so every course card links to
   `/courses/build-digital-asset`. The catalog repeats the same six sample courses to fill
   its pages.
-- **No mobile menu.** Below the `md` breakpoint the navbar links are hidden and there is no
-  hamburger menu yet.
 - **Avatars load from the network.** Some avatars come from `i.pravatar.cc`, so they need an
   internet connection to appear.
 - **Deep links on a static host.** This is a single-page app, so the host must rewrite all
   routes to `index.html` (for example a `vercel.json` rewrite or a Netlify `_redirects` file).
   Otherwise, refreshing on `/courses` returns a 404.
-- **Not covered.** There are no automated tests, and the design was matched by eye rather
-  than pixel-for-pixel.
+
