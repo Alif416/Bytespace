@@ -2,14 +2,7 @@ import CreatorDecor from './decor/CreatorDecor'
 
 export default function CreatorCta() {
   return (
-    <section
-      className="relative overflow-hidden bg-brand-blue py-20 sm:py-24"
-      style={{
-        backgroundImage:
-          'linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px)',
-        backgroundSize: '64px 64px',
-      }}
-    >
+    <section className="bg-grid-lines relative overflow-hidden bg-brand-blue py-20 sm:py-24">
       <CreatorDecor />
 
       <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">

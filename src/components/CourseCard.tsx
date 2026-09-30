@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { StarIcon } from './icons/Icons'
 import { ClockIcon, CommentIcon, LessonIcon, LevelIcon } from './icons/CardIcons'
 
@@ -20,7 +21,10 @@ export default function CourseCard({ course }: { course: Course }) {
   const { image, title, rating, instructor, level, studentCount, price, lessons, duration, comments } = course
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+    <Link
+      to="/courses/build-digital-asset"
+      className="block overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:shadow-lg"
+    >
       <div className="relative h-[220px] w-full">
         <img src={image} alt={title} className="h-full w-full object-cover" />
         <div className="absolute inset-x-3 bottom-3 flex flex-wrap gap-1.5">
@@ -76,6 +80,6 @@ export default function CourseCard({ course }: { course: Course }) {
           <span className="text-sm font-normal text-slate-400">/lifetime</span>
         </p>
       </div>
-    </div>
+    </Link>
   )
 }

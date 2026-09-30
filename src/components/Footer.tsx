@@ -50,6 +50,21 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 border-t border-slate-100" />
+
+        <div className="flex flex-col gap-4 py-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; 2023 ByteSpace. All rights reserved.</p>
+          <div className="flex gap-6">
+            <a href="#" className="transition hover:text-brand-blue">
+              Privacy Policy
+            </a>
+            <a href="#" className="transition hover:text-brand-blue">
+              Terms of Service
+            </a>
+            <a href="#" className="transition hover:text-brand-blue">
+              Cookies Settings
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   )
