@@ -2,6 +2,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import AboutTab from './AboutTab'
 import CategoryPill from './CategoryPill'
 import LessonsTab from './LessonsTab'
+import ReviewsTab from './ReviewsTab'
 
 const TABS = ['About', 'Lessons', 'Reviews'] as const
 type Tab = (typeof TABS)[number]
@@ -39,6 +40,7 @@ export default function CourseDetailContent() {
       <div className="mt-8">
         {activeTab === 'About' && <AboutTab />}
         {activeTab === 'Lessons' && <LessonsTab />}
+        {activeTab === 'Reviews' && <ReviewsTab />}
       </div>
     </div>
   )
