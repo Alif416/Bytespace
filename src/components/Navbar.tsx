@@ -4,7 +4,7 @@ import { BagIcon, LogoMark } from './icons/Icons'
 const NAV_LINKS = [
   { label: 'Home', href: '/' },
   { label: 'Courses', href: '/courses' },
-  { label: 'Creators', href: '#' },
+  { label: 'Creators', href: '/creators/purepearl-studio' },
 ]
 
 export default function Navbar() {
