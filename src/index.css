@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Poppins", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Satoshi", system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "Poppins", system-ui, "Segoe UI", Roboto, sans-serif;
 
   --color-brand-blue: #163ad9;
   --color-brand-lime: #dcfa57;
@@ -11,6 +12,15 @@
 body {
   margin: 0;
   font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }
 
 .bg-grid-lines {
