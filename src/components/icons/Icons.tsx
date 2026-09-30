@@ -1,3 +1,5 @@
+import logoMark from '../../assets/brand/logo-mark.png'
+
 interface IconProps {
   className?: string
 }
@@ -63,11 +65,5 @@ export function CheckIcon({ className = 'w-5 h-5' }: IconProps) {
 }
 
 export function LogoMark({ className = 'w-9 h-9' }: IconProps) {
-  return (
-    <div
-      className={`${className} rounded-xl bg-brand-lime flex items-center justify-center shrink-0`}
-    >
-      <span className="font-extrabold text-brand-blue text-lg leading-none">b</span>
-    </div>
-  )
+  return <img src={logoMark} alt="" className={`${className} shrink-0 object-contain`} />
 }

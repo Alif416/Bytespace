@@ -1,6 +1,7 @@
+import limeArch from '../assets/hero/lime-arch.png'
+import heroPersonPhoto from '../assets/people/man-headphones-laptop.png'
 import CourseInfoCard from './CourseInfoCard'
 import HeroDecor from './decor/HeroDecor'
-import HeroPerson from './HeroPerson'
 import Navbar from './Navbar'
 import ProgressCard from './ProgressCard'
 import RatingCard from './RatingCard'
@@ -31,8 +32,17 @@ export default function Hero() {
 
         <div className="relative mx-auto mt-12 flex max-w-4xl justify-center overflow-hidden px-6 lg:mt-16 lg:overflow-visible">
           <div className="relative flex h-[360px] w-[300px] items-end justify-center sm:h-[480px] sm:w-[420px] lg:h-[560px] lg:w-[500px]">
-            <div className="absolute bottom-6 h-[80%] w-[85%] rounded-full bg-brand-lime" />
-            <HeroPerson className="relative z-10 h-[92%] w-auto max-w-none" />
+            <img
+              src={limeArch}
+              alt=""
+              className="absolute bottom-6 h-[80%] w-[85%] object-cover"
+              style={{ borderRadius: '50%' }}
+            />
+            <img
+              src={heroPersonPhoto}
+              alt="Student wearing headphones holding a laptop"
+              className="relative z-10 h-[92%] w-auto max-w-none object-contain"
+            />
 
             <CourseInfoCard className="absolute left-0 top-10 z-20 w-36 sm:top-16 sm:w-44 lg:-left-8" />
             <ProgressCard className="absolute right-0 top-24 z-20 w-32 sm:top-32 sm:w-40 lg:-right-10" />
