@@ -12,8 +12,16 @@ const CHECKLIST = [
 
 export default function CourseCreationShowcase() {
   return (
-    <section className="bg-[#F8F8F8] py-16 sm:py-20">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2 lg:px-10">
+    <section className="relative overflow-hidden bg-[#F8F8F8] py-16 sm:py-20">
+      <div
+        className="pointer-events-none absolute -left-[450px] top-[65%] h-[900px] w-[900px] -translate-y-1/2"
+        style={{
+          background:
+            'radial-gradient(50% 50% at 50% 50%, rgba(203, 252, 1, 0.6) 0%, rgba(203, 252, 1, 0.138) 53%, rgba(203, 252, 1, 0.036) 75%, rgba(203, 252, 1, 0) 100%)',
+        }}
+        aria-hidden="true"
+      />
+      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2 lg:px-10">
         <div className="relative mx-auto w-full max-w-md rounded-2xl border border-slate-400/70 p-6">
           <img src={personPhoto} alt="" className="w-full" />
 
