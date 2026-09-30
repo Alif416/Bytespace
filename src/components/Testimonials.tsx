@@ -1,6 +1,6 @@
-import sarahAvatar from '../assets/testimonial-sarah.png'
-import jamesAvatar from '../assets/testimonial-james.png'
-import alexAvatar from '../assets/testimonial-alex.png'
+import sarahAvatar from '../assets/testimonials/sarah.png'
+import jamesAvatar from '../assets/testimonials/james.png'
+import alexAvatar from '../assets/testimonials/alex.png'
 import TestimonialCard, { type Testimonial } from './TestimonialCard'
 
 const TESTIMONIALS: Testimonial[] = [

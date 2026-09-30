@@ -1,4 +1,4 @@
-import personPhoto from '../assets/person-woman-headphones-tablet.png'
+import personPhoto from '../assets/people/woman-headphones-tablet.png'
 import { CheckIcon } from './icons/Icons'
 import RatingCard from './RatingCard'
 import StatCard from './StatCard'

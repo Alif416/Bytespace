@@ -1,5 +1,5 @@
-import learnFigmaFromBasic from '../assets/learn-figma-from-basic.jpg'
-import personPhoto from '../assets/person-man-headphones-laptop.png'
+import learnFigmaFromBasic from '../assets/courses/learn-figma-from-basic.jpg'
+import personPhoto from '../assets/people/man-headphones-laptop.png'
 import CourseCard, { type Course } from './CourseCard'
 import Squiggle from './decor/Squiggle'
 import ProgressCard from './ProgressCard'
