@@ -1,33 +1,36 @@
+import { Link, useLocation } from 'react-router-dom'
 import { BagIcon, LogoMark } from './icons/Icons'
 
 const NAV_LINKS = [
-  { label: 'Home', href: '#', active: true },
+  { label: 'Home', href: '/' },
   { label: 'Courses', href: '#' },
-  { label: 'Creators', href: '#' },
+  { label: 'Creators', href: '/creators/purepearl-studio' },
 ]
 
 export default function Navbar() {
+  const { pathname } = useLocation()
+
   return (
     <header className="relative z-20">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
-        <a href="#" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <LogoMark />
           <span className="text-xl font-bold text-white">ByteSpace</span>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {NAV_LINKS.map(({ label, href, active }) => (
-            <a
+          {NAV_LINKS.map(({ label, href }) => (
+            <Link
               key={label}
-              href={href}
+              to={href}
               className={
-                active
+                pathname === href
                   ? 'text-sm font-semibold text-white'
                   : 'text-sm font-medium text-white/70 transition hover:text-white'
               }
             >
               {label}
-            </a>
+            </Link>
           ))}
         </nav>
 

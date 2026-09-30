@@ -1,22 +1,11 @@
-import learnFigmaFromBasic from '../assets/courses/learn-figma-from-basic.jpg'
 import personPhoto from '../assets/people/man-headphones-laptop.png'
-import CourseCard, { type Course } from './CourseCard'
+import { COURSES } from '../data/courses'
+import CourseCard from './CourseCard'
 import Squiggle from './decor/Squiggle'
 import ProgressCard from './ProgressCard'
 import StatItem from './StatItem'
 
-const FEATURED_COURSE: Course = {
-  image: learnFigmaFromBasic,
-  title: 'Learn Figma from Basic',
-  rating: 4.5,
-  instructor: 'purepearl studio',
-  level: 'Beginner',
-  studentCount: '26+',
-  price: 25,
-  lessons: '17 Lessons',
-  duration: '2 hours 16 mins',
-  comments: '59 Comments',
-}
+const FEATURED_COURSE = COURSES[0]
 
 const STATS = [
   { value: '12K', label: 'Students' },
