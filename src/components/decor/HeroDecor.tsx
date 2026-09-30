@@ -21,12 +21,12 @@ export default function HeroDecor() {
       <img
         src={squiggleLime}
         alt=""
-        className="absolute -left-2 top-[300px] w-48 hidden sm:block"
+        className="absolute -left-2 top-[28%] w-48 hidden lg:block"
       />
       <img
         src={squiggleWhite}
         alt=""
-        className="absolute left-[235px] top-[520px] w-28 hidden lg:block"
+        className="absolute left-[16%] top-[48%] w-28 hidden lg:block"
       />
       <img
         src={ringWhite}
@@ -36,17 +36,17 @@ export default function HeroDecor() {
       <img
         src={cylinderLime}
         alt=""
-        className="absolute -right-2 top-[270px] w-44 hidden lg:block"
+        className="absolute -right-2 top-[25%] w-44 hidden lg:block"
       />
       <img
         src={triangleWhite}
         alt=""
-        className="absolute right-[200px] top-[500px] w-32 hidden lg:block"
+        className="absolute right-[13%] top-[46%] w-32 hidden lg:block"
       />
       <img
         src={squiggleWhite}
         alt=""
-        className="absolute right-[70px] bottom-12 w-44 hidden md:block"
+        className="absolute right-[5%] bottom-12 w-44 hidden md:block"
       />
     </div>
   )

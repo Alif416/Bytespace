@@ -1,6 +1,7 @@
 import personPhoto from '../assets/people/man-headphones-laptop.png'
 import { COURSES } from '../data/courses'
 import CourseCard from './CourseCard'
+import GlowBlob from './decor/GlowBlob'
 import Squiggle from './decor/Squiggle'
 import ProgressCard from './ProgressCard'
 import StatItem from './StatItem'
@@ -16,30 +17,9 @@ const STATS = [
 export default function ProfessionalGrowth() {
   return (
     <section className="relative overflow-hidden bg-[#F8F8F8] py-16 sm:py-20">
-      <div
-        className="pointer-events-none absolute -top-[300px] left-[-100px] h-[900px] w-[900px]"
-        style={{
-          background:
-            'radial-gradient(50% 50% at 50% 50%, rgba(203, 252, 1, 0.6) 0%, rgba(203, 252, 1, 0.138) 53%, rgba(203, 252, 1, 0.036) 75%, rgba(203, 252, 1, 0) 100%)',
-        }}
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute -bottom-[350px] -left-[350px] h-[800px] w-[800px]"
-        style={{
-          background:
-            'radial-gradient(50% 50% at 50% 50%, rgba(22, 58, 217, 0.18) 0%, rgba(22, 58, 217, 0.05) 60%, rgba(22, 58, 217, 0) 100%)',
-        }}
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute -right-[300px] top-0 h-[900px] w-[700px]"
-        style={{
-          background:
-            'radial-gradient(50% 50% at 50% 50%, rgba(22, 58, 217, 0.12) 0%, rgba(22, 58, 217, 0.03) 60%, rgba(22, 58, 217, 0) 100%)',
-        }}
-        aria-hidden="true"
-      />
+      <GlowBlob color="lime" className="-top-[300px] left-[-100px] h-[900px] w-[900px]" />
+      <GlowBlob color="blue" className="-bottom-[350px] -left-[350px] h-[800px] w-[800px]" />
+      <GlowBlob color="blue" className="-right-[300px] top-0 h-[900px] w-[700px] opacity-70" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2 lg:px-10">
         <div>
           <h2 className="text-4xl font-extrabold leading-tight text-slate-950 sm:text-5xl">

@@ -43,8 +43,14 @@ export default function Hero() {
               className="relative z-10 h-[92%] w-auto max-w-none object-contain"
             />
 
-            <CourseInfoCard className="absolute left-0 top-40 z-20 w-40 whitespace-nowrap !px-4 !py-3 sm:top-44 sm:w-auto lg:-left-16" />
-            <ProgressCard className="absolute right-0 top-28 z-20 w-32 !px-4 !py-3 sm:top-32 sm:w-36 lg:-right-4" />
+            <CourseInfoCard
+              compact
+              className="absolute left-0 top-40 z-20 w-40 whitespace-nowrap sm:top-44 sm:w-auto lg:-left-16"
+            />
+            <ProgressCard
+              compact
+              className="absolute right-0 top-28 z-20 w-32 sm:top-32 sm:w-36 lg:-right-4"
+            />
             <RatingCard className="absolute bottom-24 left-0 z-20 w-48 sm:w-56 lg:-left-14" />
           </div>
         </div>
