@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { CertificateIcon, ConsultIcon, FolderIcon, VideoIcon } from './icons/CourseDetailIcons'
 
 const LESSONS = [
@@ -72,12 +73,12 @@ export default function CourseSidebar() {
         Ready to Dive In? Enroll Now and Start Building your Digital Future!
       </p>
 
-      <button
-        type="button"
-        className="mt-4 rounded-full border border-slate-200 px-5 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300"
+      <Link
+        to="/creators/purepearl-studio"
+        className="mt-4 inline-block rounded-full border border-slate-200 px-5 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300"
       >
         See Full Profile
-      </button>
+      </Link>
     </div>
   )
 }
