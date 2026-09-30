@@ -1,7 +1,7 @@
 import Squiggle from './Squiggle'
 
-// Decorative background shapes for the sign-up page.
-export default function SignupDecor() {
+// Decorative background shapes shared by the sign-up and sign-in pages.
+export default function AuthDecor() {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
       <Squiggle
