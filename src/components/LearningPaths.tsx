@@ -1,9 +1,9 @@
-import businessImg from '../assets/category-business.png'
-import designImg from '../assets/category-design.png'
-import developmentImg from '../assets/category-development.png'
-import itSoftwareImg from '../assets/category-it-software.png'
-import marketingImg from '../assets/category-marketing.png'
-import photographyImg from '../assets/category-photography.png'
+import businessImg from '../assets/category/business.png'
+import designImg from '../assets/category/design.png'
+import developmentImg from '../assets/category/development.png'
+import itSoftwareImg from '../assets/category/it-software.png'
+import marketingImg from '../assets/category/marketing.png'
+import photographyImg from '../assets/category/photography.png'
 import CategoryCard from './CategoryCard'
 
 const CATEGORIES = [

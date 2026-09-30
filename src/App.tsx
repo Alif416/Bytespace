@@ -1,16 +1,13 @@
-import CourseCategories from './components/CourseCategories'
-import Hero from './components/Hero'
-import LearningPaths from './components/LearningPaths'
-import TrustedLogos from './components/TrustedLogos'
+import { Route, Routes } from 'react-router-dom'
+import CourseDetailPage from './pages/CourseDetailPage'
+import LandingPage from './pages/LandingPage'
 
 function App() {
   return (
-    <>
-      <Hero />
-      <TrustedLogos />
-      <CourseCategories />
-      <LearningPaths />
-    </>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/courses/build-digital-asset/:tab?" element={<CourseDetailPage />} />
+    </Routes>
   )
 }
 

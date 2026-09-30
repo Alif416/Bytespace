@@ -1,3 +1,5 @@
+import logoMark from '../../assets/brand/logo-mark.png'
+
 interface IconProps {
   className?: string
 }
@@ -46,12 +48,22 @@ export function StarIcon({ className = 'w-4 h-4' }: IconProps) {
   )
 }
 
-export function LogoMark({ className = 'w-9 h-9' }: IconProps) {
+export function CheckIcon({ className = 'w-5 h-5' }: IconProps) {
   return (
-    <div
-      className={`${className} rounded-xl bg-brand-lime flex items-center justify-center shrink-0`}
-    >
-      <span className="font-extrabold text-brand-blue text-lg leading-none">b</span>
-    </div>
+    <span className={`flex shrink-0 items-center justify-center rounded-full bg-brand-blue ${className}`}>
+      <svg viewBox="0 0 24 24" fill="none" className="h-3.5 w-3.5" aria-hidden="true">
+        <path
+          d="M5 13l4 4 10-10"
+          stroke="white"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </span>
   )
+}
+
+export function LogoMark({ className = 'w-9 h-9' }: IconProps) {
+  return <img src={logoMark} alt="" className={`${className} shrink-0 object-contain`} />
 }
