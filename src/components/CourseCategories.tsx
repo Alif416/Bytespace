@@ -1,28 +1,8 @@
 import { useState } from 'react'
+import { CATEGORIES } from '../data/categories'
 import { COURSES } from '../data/courses'
 import CategoryPill from './CategoryPill'
 import CourseCard from './CourseCard'
-
-const CATEGORIES = [
-  'Featured',
-  'Music',
-  'Drawing & Painting',
-  'Marketing',
-  'Animation',
-  'Social Media',
-  'UI/UX Design',
-  'Creative Marketing',
-  'Digital Illustration',
-  'Film & Video',
-  'Crafts',
-  'Freelance & Entrepreneurship',
-  'Graphic Design',
-  'Photography',
-  'Productivity',
-  'Web Development',
-  'Data Science',
-  'Cooking',
-]
 
 export default function CourseCategories() {
   const [active, setActive] = useState('Featured')
