@@ -35,9 +35,12 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-6 md:flex">
-          <a href="#" className="text-sm font-medium text-white/80 transition hover:text-white">
+          <Link
+            to="/signin"
+            className="text-sm font-medium text-white/80 transition hover:text-white"
+          >
             Sign In
-          </a>
+          </Link>
           <Link
             to="/signup"
             className="text-sm font-medium text-white/80 transition hover:text-white"
