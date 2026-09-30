@@ -38,9 +38,12 @@ export default function Navbar() {
           <a href="#" className="text-sm font-medium text-white/80 transition hover:text-white">
             Sign In
           </a>
-          <a href="#" className="text-sm font-medium text-white/80 transition hover:text-white">
+          <Link
+            to="/signup"
+            className="text-sm font-medium text-white/80 transition hover:text-white"
+          >
             Join Us
-          </a>
+          </Link>
           <button
             type="button"
             aria-label="Cart"
