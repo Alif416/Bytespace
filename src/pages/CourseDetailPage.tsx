@@ -1,9 +1,19 @@
+import { useParams } from 'react-router-dom'
 import CourseDetailContent from '../components/CourseDetailContent'
 import CourseHeroBanner from '../components/CourseHeroBanner'
 import CourseSidebar from '../components/CourseSidebar'
 import Footer from '../components/Footer'
+import NotFoundPage from './NotFoundPage'
+
+const VALID_TABS = ['lessons', 'reviews']
 
 export default function CourseDetailPage() {
+  const { tab } = useParams<{ tab?: string }>()
+
+  if (tab && !VALID_TABS.includes(tab)) {
+    return <NotFoundPage />
+  }
+
   return (
     <>
       <CourseHeroBanner />
