@@ -17,13 +17,13 @@ export interface Course {
 
 const AVATAR_SEEDS = [15, 22, 41]
 
-export default function CourseCard({ course }: { course: Course }) {
+export default function CourseCard({ course, className = '' }: { course: Course; className?: string }) {
   const { image, title, rating, instructor, level, studentCount, price, lessons, duration, comments } = course
 
   return (
     <Link
       to="/courses/build-digital-asset"
-      className="block overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:shadow-lg"
+      className={`block overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:shadow-lg ${className}`}
     >
       <div className="relative h-[220px] w-full">
         <img src={image} alt={title} className="h-full w-full object-cover" />
